@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eplate.my/sitemap.xml
