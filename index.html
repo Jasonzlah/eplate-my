@@ -201,7 +201,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap');
     
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     
@@ -262,6 +262,15 @@
     }
     .nname span { color: #EF9A9A; }
     .nright { display: flex; gap: 7px; }
+    .nlink {
+      color: rgba(255,255,255,.68);
+      padding: 5px 7px;
+      border-radius: var(--r);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .nlink:hover { color: #fff; background: rgba(255,255,255,.07); }
     .nc {
       background: var(--red);
       border: none;
@@ -331,12 +340,12 @@
       background: #EF9A9A;
     }
     .hero h1 {
-      font-family: var(--fh);
+      font-family: var(--fb);
       font-size: clamp(28px, 5vw, 46px);
       color: #fff;
       font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -.5px;
+      line-height: 1.12;
+      letter-spacing: 0;
       margin-bottom: 14px;
     }
     .hero h1 .ac { color: #EF5350; }
@@ -482,7 +491,7 @@
       font-weight: 800;
       color: var(--ink);
       line-height: 1.1;
-      letter-spacing: -.3px;
+      letter-spacing: 0;
       margin-bottom: 8px;
     }
     .ss {
@@ -706,6 +715,47 @@
       font-weight: 500;
       color: var(--ink2);
     }
+
+    /* Blog */
+    .bloggrid {
+      margin-top: 28px;
+      display: grid;
+      gap: 12px;
+    }
+    .blogcard {
+      display: block;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--rl);
+      padding: 18px;
+      text-decoration: none;
+      transition: .15s;
+    }
+    .blogcard:hover {
+      border-color: var(--redmid);
+      transform: translateY(-1px);
+    }
+    .blogcard h3 {
+      font-family: var(--fh);
+      font-size: 15px;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .blogcard p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--ink2);
+    }
+    .blogmeta {
+      display: block;
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
     
     /* CTA Banner */
     .ctabanner {
@@ -816,6 +866,7 @@
       <div class="nname"><span>JPJe</span>Plate Installer</div>
     </div>
     <div class="nright">
+      <a href="/blog/" class="nlink">Blog</a>
       <a href="#contact" class="nc">WhatsApp Us</a>
     </div>
   </nav>
@@ -856,6 +907,31 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="sec" id="blog">
+    <div class="sl">Guides</div>
+    <h2 class="st">JPJePlate guides for Malaysian drivers</h2>
+    <p class="ss">Helpful articles for drivers comparing eplate pricing, documents, and installation in Johor Bahru.</p>
+
+    <div class="bloggrid">
+      <a class="blogcard" href="/blog/jpjeplate-johor-bahru-guide/">
+        <span class="blogmeta">Johor Bahru Guide</span>
+        <h3>JPJePlate in Johor Bahru: what drivers need to know</h3>
+        <p>Understand the basic order flow, workshop installation, and what to prepare before fitting your new electronic number plate.</p>
+      </a>
+      <a class="blogcard" href="/blog/eplate-price-malaysia-rm285/">
+        <span class="blogmeta">Pricing</span>
+        <h3>How much does an eplate cost in Malaysia?</h3>
+        <p>A simple breakdown of the RM285 package, what is included, and the common questions drivers ask before ordering.</p>
+      </a>
+      <a class="blogcard" href="/blog/documents-needed-for-jpjeplate/">
+        <span class="blogmeta">Documents</span>
+        <h3>Documents needed to order a JPJePlate</h3>
+        <p>MyKad, vehicle grant, registration details, and the checks that help keep the order process smooth.</p>
+      </a>
     </div>
   </section>
 
@@ -1077,7 +1153,7 @@
     <p>
       © 2025 <span class="fbrand">ePlate.my</span> — JPJePlate Installer Johor Bahru<br>
       Authorised JPJePlate installer · Johor, Malaysia<br>
-      <a href="#contact">WhatsApp us</a> · <a href="#pricing">Pricing</a> · <a href="#how-it-works">How it works</a>
+      <a href="#contact">WhatsApp us</a> · <a href="#pricing">Pricing</a> · <a href="#how-it-works">How it works</a> · <a href="/blog/">Blog</a>
     </p>
   </footer>
 
