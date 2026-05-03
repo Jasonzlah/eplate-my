@@ -1,0 +1,13 @@
+;; Cloudflare DNS import file for eplate.my
+;; Import in Cloudflare: DNS > Records > Import and Export > Import DNS records
+;;
+;; After import, keep these records as DNS only / grey cloud for GitHub Pages.
+
+$ORIGIN eplate.my.
+$TTL 3600
+
+@  IN  A      185.199.108.153
+@  IN  A      185.199.109.153
+@  IN  A      185.199.110.153
+@  IN  A      185.199.111.153
+www  IN  CNAME  jasonzlah.github.io.
