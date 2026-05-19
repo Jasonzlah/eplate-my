@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://eplate.my/blog/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -71,6 +71,12 @@
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eplate.my/blog/how-unique-tid-secures-jpjeplate-rfid/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://eplate.my/blog/jpjeplate-johor-bahru-guide/</loc>
